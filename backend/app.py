@@ -9,6 +9,9 @@ CORS(app)
 app.config.from_object(Config)
 
 db = SQLAlchemy(app)
+
+import routes
+
 with app.app_context():
       db.create_all()
 
